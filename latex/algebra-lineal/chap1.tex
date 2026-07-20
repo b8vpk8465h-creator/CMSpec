@@ -9,6 +9,7 @@ vectores.
 \end{itemize}
 
 \subsection{Definiciones generales}
+\cmspecindice{Vector}
 Un \textbf{vector fila} de $n$ componentes (entradas) se define como un conjunto ordenado de $n$ números dispuestos de manera horizontal, es decir 
 \[x= \left(\begin{array}{ccccc}
    x_1 & x_2 &  \dots&  x_n 
@@ -23,6 +24,7 @@ De la misma manera, un \textbf{vector columna} de $n$ componentes es un conjunto
 \end{array}\right).\]
 En ambos casos, si un vector tiene $n$ componentes, se dice que el vector es de dimensión $n$.
 \begin{defin}
+\cmspecindice{Matriz}
 Una \textbf{matriz $A$ de $m \times n$} es un arreglo rectangular de $mn$ elementos de un conjunto dispuestos en $m$ filas y $n$ columnas:
 \[A=\left(\begin{array}{cccccc}
      a_{11}& a_{12} & \dots & a_{1j} &\dots & a_{1n}\\
@@ -50,7 +52,7 @@ En el caso de matrices cuadradas de orden $n$ es escribe $\M_n(K)$.
 
 
 Una matriz $A$ de $m \times n$ cuyas entradas son todas  iguales a 0, se denomina \textbf{matriz cero} de $m \times n$ y se denota por $0_{m\times n}$.
-
+\cmspecindice{Matriz identidad}
 La matriz cuadrada $I_n=(a_{ij})$ de $n\times n$ tal que 
 \[a_{ij}=\left\{\begin{array}{ll}
     1 & \text{ si } i= j, \\
@@ -59,8 +61,8 @@ La matriz cuadrada $I_n=(a_{ij})$ de $n\times n$ tal que
 se llama \textbf{matriz identidad} de orden $n$. Su nombre se debe a sus propiedades aritm\'eticas, que discutiremos m\'as adelante.
 
 Dos matrices $A=(a_{ij})$ y $B=(b_{ij})$ son iguales si son del mismo tamaño y las componentes correspondientes son iguales, es decir, $a_{ij}=b_{ij}$ para cada $i$ y para cada $j$.
-
-Si $A = (a_{i j})$ es una matriz de orden $m \times n$, la \textbf{transpuesta} de $A$, denotada por $A^t$,
+\cmspecindice{Traspuesta}
+Si $A = (a_{i j})$ es una matriz de orden $m \times n$, la \textbf{traspuesta} de $A$, denotada por $A^t$,
 es la matriz de orden $n \times m$ que se obtiene al intercambiar las filas por las columnas
 de $A$. En consecuencia, 
 \[A^t := (a_{j i }).\]
@@ -86,7 +88,7 @@ de $A$. En consecuencia,
 \begin{enumerate}[(a)]
     \item Determine la matriz de $4\times 3$ tal que $a_{ij}=i-j$.
     \item De un ejemplo de una matriz $A=(a_{ij})$ tal que $a_{ij}=a_{ji}$ para todo $i$ y para todo $j$.
-    \item ?`Existe alguna relaci\'on entre $\M_{1\times n}(\R)$ y $\R^n$?
+    \item ¿Existe alguna relaci\'on entre $\M_{1\times n}(\R)$ y $\R^n$?
     \item Construya la matriz $A = (a_{ij})$ de $3 \times 4$, donde
 \[a_{ij}=\left\{\begin{array}{ll}
     i & \text{ si } i\leq j, \\
@@ -104,7 +106,7 @@ Respuesta: $x = 4, y = -3, z = -1, u = 2, v = -1, w = -3$.
 \end{enumerate}
 \end{ejer}
 
-\begin{rmk}\textbf{?`Por qu\'e estudiar matrices?}
+\begin{rmk}\textbf{¿Por qu\'e estudiar matrices?}
 
 Por su simplicidad y sus propiedades algebraicas, las matrices pueden utilizarse en diversas situaciones, como ordenar datos o representar situaciones pr\'acticas.
 
@@ -123,8 +125,9 @@ P=\begin{blockarray}{cccccc}
 \end{rmk}
 
 \begin{defin}
+\cmspecindice{Diagonal}
 La \textbf{diagonal de una matriz} $A$ son las entradas $a_{i j}$, tales que $i=j$ y se denota por $\diag(A):=(a_{11}, \dots, a_{nn})$.
-
+\cmspecindice{Traza}
 Para una matriz cuadrada de orden $n$, se define la \textbf{traza de $A$} como
 \[\tr(A):=\sum_{i=1}^{n} a_{ii},\]
 es decir, la traza corresponde a la suma de los elementos de la diagonal de una matriz.
